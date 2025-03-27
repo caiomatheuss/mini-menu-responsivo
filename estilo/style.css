@@ -9,6 +9,7 @@
 body, html {
     background-color: lightgray;
     width: 100vw;
+    scrollbar-width: none;
 }
 
 header {
@@ -52,11 +53,6 @@ menu > ul > li > a {
     text-align: center;
 }
 
-main > article > iframe {
-    width: 60vw;
-    height: 60vh;
-}
-
 main {
     padding: 10px;
 }
@@ -74,11 +70,37 @@ article {
 }
 
 article > p {
-    padding: 18px;
+    padding: 15px;
+    margin-bottom: 5px;
+    text-indent: 10px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.3;
 }
 
 .fotoney {
     display: flex;
     justify-content: center;
-    width: 100vw;
+}
+
+.fotoney > .iframm {
+    width: 800px;
+    height: 400px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+#neymarbio {
+    color: rgb(100, 87, 87);
+    text-decoration: none;
+}
+
+#neymarbio:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+#neymarbio::after {
+    content: '🔗';
 }
