@@ -1,2 +1,110 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header > h1 {
+        font-size: 1.3em;
+        padding: 20px;
+    }
+
+    header > #burguer {
+        display: block;
+    }
+
+    article {
+        width: 95vw;
+    }
+
+    article > p {
+        font-size: 1.2em
+    }
+
+    menu > ul > li > a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgb(87, 86, 86);
+        width: 97vw;
+        color: white;
+        text-align: center;
+        border-radius: 0px;
+    }
+    
+    menu > ul > li > a:hover {
+        background-color: black;
+        text-decoration: underline;
+        color: rgb(170, 165, 165);
+        border-radius: 10px;
+        transform: translate(0px,-5px);
+        transition: .3s;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    header > h1 {
+        font-size: 1.2em;
+    }
+
+    header > #burguer {
+        display: none;
+    }
+
+    main {
+        padding: 0px;
+    }
+    
+    article {
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    article > h2 {
+        font-size: 1.1em;
+    }
+
+    article > p {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    menu > ul {
+        display: flex;
+        justify-content: left;
+    }
+
+    #itens {
+        display: block !important;
+    }
+
+    menu > ul > li {
+        margin: 0px 15px;
+    }
+
+    menu > ul > li > a {
+        width: 10vw;
+    }
+
+    .fotoney > .iframm {
+        width: 750px;
+        height: 400px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    header > #burguer {
+        display: none;
+    }
+
+
+    .fotoney > .iframm {
+        width: 85vw;
+        height: 400px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+}
